@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class StateController : MonoBehaviour
 {
-   private PlayerState currentPlayerState = PlayerState.Idle;
+    private PlayerState currentPlayerState = PlayerState.Idle;
     private void Start()
     {
         ChangeState(PlayerState.Idle);

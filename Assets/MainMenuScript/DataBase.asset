@@ -1,0 +1,231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e05e6c19457b7114db677b188aef6bc5, type: 3}
+  m_Name: DataBase
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectDataBaseSO
+  objectData:
+  - <Name>k__BackingField: Floor
+    <ID>k__BackingField: 0
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 175886647813805099, guid: 6bafb9556d35ba840bebea4eea7d34c2, type: 3}
+  - <Name>k__BackingField: Chair
+    <ID>k__BackingField: 10
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 4428052050468720457, guid: e033e50487fb016449143cd70d837387, type: 3}
+  - <Name>k__BackingField: Big Bed
+    <ID>k__BackingField: 17
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 3487007735555770654, guid: 4721f1b576334dc46b3c72470bf613e3, type: 3}
+  - <Name>k__BackingField: Table
+    <ID>k__BackingField: 15
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 3493615974341626966, guid: c8183485a28237d4385a3c7ef8659faa, type: 3}
+  - <Name>k__BackingField: Bed
+    <ID>k__BackingField: 16
+    <Size>k__BackingField: {x: 2, y: 3}
+    <Prefab>k__BackingField: {fileID: 5340171428701155532, guid: ef2b348a9dfbf4442801e17737350c9e, type: 3}
+  - <Name>k__BackingField: Desing Chair
+    <ID>k__BackingField: 14
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 7313058349251401052, guid: 12cb5e2fc36509e42951962fce8e7ccf, type: 3}
+  - <Name>k__BackingField: Couch
+    <ID>k__BackingField: 13
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 7508328477719830340, guid: 373f34cefb3b3214b9b96dbb23f1fae1, type: 3}
+  - <Name>k__BackingField: Carpet_0
+    <ID>k__BackingField: 1
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 1883387287047634625, guid: 17baaf13ea243404ba7dc134a5ad6a77, type: 3}
+  - <Name>k__BackingField: Wardrobe
+    <ID>k__BackingField: 12
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 5686207749243886066, guid: 5ef8b9e6003907b4f8098e52682cac46, type: 3}
+  - <Name>k__BackingField: Table
+    <ID>k__BackingField: 11
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 8773590366584793385, guid: a0434053514861f4c9c0fcf005852cc2, type: 3}
+  - <Name>k__BackingField: Carpet_01
+    <ID>k__BackingField: 2
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 4091592209465965203, guid: 42c054b5f0f59f7479420004e8bfb5c6, type: 3}
+  - <Name>k__BackingField: Carpet_02
+    <ID>k__BackingField: 3
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 3747600662887287985, guid: 7c0ee0a5e57cb4c4d92030f3c0812d2c, type: 3}
+  - <Name>k__BackingField: Carpet_03
+    <ID>k__BackingField: 4
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 5245132157633622753, guid: 4ffcc8a315578ef4d81e4d3f78e1b9c3, type: 3}
+  - <Name>k__BackingField: Carpet_04
+    <ID>k__BackingField: 5
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 7436512195788132801, guid: 0c706a1d88fef0e4c96341faa2a4ff23, type: 3}
+  - <Name>k__BackingField: Carpet_05
+    <ID>k__BackingField: 6
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 6651992336045933360, guid: e2d47ee28c8a1fa49b5516837e09c1eb, type: 3}
+  - <Name>k__BackingField: Carpet_06
+    <ID>k__BackingField: 7
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 7217670036407768561, guid: 658776daa5d72d4419285ae401149676, type: 3}
+  - <Name>k__BackingField: Carpet_07
+    <ID>k__BackingField: 8
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 6008316159010280067, guid: c825f2c9ee585924f847891c2cd5e4ed, type: 3}
+  - <Name>k__BackingField: Carpet_08
+    <ID>k__BackingField: 9
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 7165499877240050173, guid: fc4ca49ebeffa044da769b7cde413272, type: 3}
+  - <Name>k__BackingField: Bed_01
+    <ID>k__BackingField: 18
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 9201865941475813047, guid: fd0019cc893844b4ba943134a06a04c1, type: 3}
+  - <Name>k__BackingField: Bed_02
+    <ID>k__BackingField: 19
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 4193541321708391636, guid: 8c23b6ed8e55a7246a15952956b44251, type: 3}
+  - <Name>k__BackingField: Bed_03
+    <ID>k__BackingField: 20
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 3378320516030287394, guid: 628ffb2138b33d2438611b6c0b39542c, type: 3}
+  - <Name>k__BackingField: Bed_04
+    <ID>k__BackingField: 21
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 919132149155446097, guid: 2a4f2ab031466e748a752d23e4fb7c2f, type: 3}
+  - <Name>k__BackingField: Bed_05
+    <ID>k__BackingField: 22
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 4319646393337265071, guid: ec85ba7d9ae0ec04f820984a41784ef3, type: 3}
+  - <Name>k__BackingField: Bed_06
+    <ID>k__BackingField: 23
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 177001340347129415, guid: 616ee2a1ce37a0d41a98e5314186c757, type: 3}
+  - <Name>k__BackingField: Bed_07
+    <ID>k__BackingField: 24
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 2754964932595523592, guid: b278572ee2b6d53459a2a5a0706226cc, type: 3}
+  - <Name>k__BackingField: Bed_08
+    <ID>k__BackingField: 25
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 5824090515810812179, guid: 416a108dbd9ce4b41aa51f278696818a, type: 3}
+  - <Name>k__BackingField: Bed_09
+    <ID>k__BackingField: 26
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 4269285429966320573, guid: 00484aa79a66294418951d29917784c4, type: 3}
+  - <Name>k__BackingField: Bed_10
+    <ID>k__BackingField: 27
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 8050088595063511089, guid: 0ad12855f9c5fd54dac4062d98ff49c3, type: 3}
+  - <Name>k__BackingField: Chair_02
+    <ID>k__BackingField: 28
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 4017956816026073361, guid: e3a680495ff963b48b9ec58f5f3e3301, type: 3}
+  - <Name>k__BackingField: Chair_03
+    <ID>k__BackingField: 29
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 4129520955921616211, guid: 96568741c47522e4fb87f1bee6a443c5, type: 3}
+  - <Name>k__BackingField: Chair_04
+    <ID>k__BackingField: 29
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 5921919043804719201, guid: d909568d9e9bd6d4b907155a2d8479d1, type: 3}
+  - <Name>k__BackingField: Chair_05
+    <ID>k__BackingField: 30
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 2159448034438491636, guid: f357f4472833f7841a3df4bc817c9786, type: 3}
+  - <Name>k__BackingField: Chair_06
+    <ID>k__BackingField: 31
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 9127933475484978877, guid: 6c1245feb3225e6439451f3433ff01bd, type: 3}
+  - <Name>k__BackingField: Chair_07
+    <ID>k__BackingField: 32
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 8302569395685735176, guid: 30d507ec497d40d49ae55c6fba0d0700, type: 3}
+  - <Name>k__BackingField: Chair_08
+    <ID>k__BackingField: 33
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 7137722654497982315, guid: 0866be6799441564fb38ee9c6fc58642, type: 3}
+  - <Name>k__BackingField: Chair_09
+    <ID>k__BackingField: 34
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 7664931795284599822, guid: defb0369a23350749ab4eb4a8eb4d4e2, type: 3}
+  - <Name>k__BackingField: Chair_10
+    <ID>k__BackingField: 35
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 8411935293551275172, guid: a46d982a78ff2a44896685cd5800508f, type: 3}
+  - <Name>k__BackingField: Table_02
+    <ID>k__BackingField: 36
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 3398721390463179079, guid: f1e04cf284cafb6479b3586e3e48ceba, type: 3}
+  - <Name>k__BackingField: Table_03
+    <ID>k__BackingField: 37
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 7044180883571791508, guid: 6767685ff4e85134e8a06f870bd2e9d3, type: 3}
+  - <Name>k__BackingField: Table_04
+    <ID>k__BackingField: 38
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 6480096165876406873, guid: 5fffb8dec172a3347accac82c331c190, type: 3}
+  - <Name>k__BackingField: Table_05
+    <ID>k__BackingField: 39
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 2671310046531882682, guid: 1fb69f2363d26034483fd3bac35678bc, type: 3}
+  - <Name>k__BackingField: Table_06
+    <ID>k__BackingField: 40
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 3585508219705818140, guid: bc4bc8456ecf6084d878f9fe1fcd0db9, type: 3}
+  - <Name>k__BackingField: Table_07
+    <ID>k__BackingField: 41
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 8774629315536231664, guid: 4614011d2d7354e468be4f3cf116acfd, type: 3}
+  - <Name>k__BackingField: Table_08
+    <ID>k__BackingField: 42
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 7949733924696353808, guid: 385db5be6a112604ba0b52f86d2aedd5, type: 3}
+  - <Name>k__BackingField: Table_09
+    <ID>k__BackingField: 43
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 5923838950640490678, guid: 7524169480ff89e4dac1f824481533a0, type: 3}
+  - <Name>k__BackingField: Couch_01
+    <ID>k__BackingField: 44
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 6843766469569571138, guid: 272a2206a5096974e92bc9ec34eba922, type: 3}
+  - <Name>k__BackingField: Couch_02
+    <ID>k__BackingField: 45
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 6574782911352407955, guid: 9beda7655a9dd5643b6d699d3075e67f, type: 3}
+  - <Name>k__BackingField: Couch_03
+    <ID>k__BackingField: 46
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 1738995789916863148, guid: 8180029a4d0eeef4286e4629b99f8916, type: 3}
+  - <Name>k__BackingField: Couch_04
+    <ID>k__BackingField: 47
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 3579630238232045211, guid: 03cc532f7179c7a428d0dd78adbd700d, type: 3}
+  - <Name>k__BackingField: Couch_05
+    <ID>k__BackingField: 48
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 5522396420635386696, guid: 460e9dd69a9e68044bdec68f9bcbfeb7, type: 3}
+  - <Name>k__BackingField: Couch_06
+    <ID>k__BackingField: 49
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 3158638624848788202, guid: a89755de321dff546a4c0aaaa10d18fa, type: 3}
+  - <Name>k__BackingField: Couch_07
+    <ID>k__BackingField: 50
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 4457297496290239676, guid: b427c3139c0b9d8438f1ba209dd0f5f3, type: 3}
+  - <Name>k__BackingField: Couch_08
+    <ID>k__BackingField: 51
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 7052134331448647101, guid: 2b0e53d1eb1c23848a256590225161d4, type: 3}
+  - <Name>k__BackingField: Couch_09
+    <ID>k__BackingField: 52
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 2792471038099133831, guid: f6f8d9b13cf0c41438f596e01b3783f5, type: 3}

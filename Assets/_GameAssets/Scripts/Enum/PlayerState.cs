@@ -5,6 +5,10 @@ public enum PlayerState
    Idle, 
    Move,
    Jump, 
-   SlideIdle,
-   Slide
+   // SlideIdle,
+   // Slide
+   Running,
+   Falling,
+   Landing
+
 }

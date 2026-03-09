@@ -7,9 +7,15 @@ public class ThirdPersonCameraController : MonoBehaviour
     [SerializeField] private Transform orientationTransform;
     [SerializeField] private Transform playerVisualTransform;
     [SerializeField] private float rotationSpeed;
+    private Vector3 velocity = Vector3.zero;
 
     private void Update()
     {
+        if(GameManeger.Instance.GetCurrentGameState() != GameState.Play
+         && GameManeger.Instance.GetCurrentGameState() != GameState.Resume)
+        {
+            return;
+        }
         Vector3 viewDirection = 
         playerTransform.position - new Vector3(transform.position.x, playerTransform.position.y, transform.position.z);
 
@@ -24,7 +30,8 @@ public class ThirdPersonCameraController : MonoBehaviour
         if (inputDirection != Vector3.zero)
         {
           playerVisualTransform.forward 
-         = Vector3.Slerp(playerVisualTransform.forward, inputDirection.normalized, Time.deltaTime * rotationSpeed);
+         = Vector3.SmoothDamp(playerVisualTransform.forward, inputDirection.normalized, ref velocity, Time.deltaTime * rotationSpeed);
+         //Vector3.Slerp(playerVisualTransform.forward, inputDirection.normalized, Time.deltaTime * rotationSpeed);
         }
         
     }
