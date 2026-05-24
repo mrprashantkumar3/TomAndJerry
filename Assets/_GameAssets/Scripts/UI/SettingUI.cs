@@ -23,14 +23,15 @@ public class SettingUI : MonoBehaviour
         settingPopupObject.transform.localScale = Vector3.zero;
         settingButton.onClick.AddListener(OnSettingButtonClicked);
         ResumeButton.onClick.AddListener(OnResumeButtonClicked);
+        ONExitButtonOnClicked();
     }
     private void OnSettingButtonClicked()
     {
         GameManeger.Instance.ChangeGameState(GameState.Pause);
         blackBackgroundObject.SetActive(true);
         settingPopupObject.SetActive(true);
-        blackBackgroundImage.DOFade(0.8f, animationDuration).SetEase(Ease.Linear);
-        settingPopupObject.transform.DOScale(1.5f, animationDuration).SetEase(Ease.OutBack);
+        blackBackgroundImage.DOFade(0.8f, animationDuration).SetEase(Ease.Linear).SetUpdate(true);
+        settingPopupObject.transform.DOScale(1.5f, animationDuration).SetEase(Ease.OutBack).SetUpdate(true);
     }
     private void OnResumeButtonClicked()
     {
@@ -42,6 +43,13 @@ public class SettingUI : MonoBehaviour
              GameManeger.Instance.ChangeGameState(GameState.Resume);
               blackBackgroundObject.SetActive(false);
               settingPopupObject.SetActive(false);
+        });
+    }
+    private void ONExitButtonOnClicked()
+    {
+        mainMenuButton.onClick.AddListener(() =>
+        {
+           LoadingMenuManager.Instance.SwitchToScene(Consts.SceneNames.MainMenu_Scene); 
         });
     }
    

@@ -14,14 +14,25 @@ public class CoinCount : MonoBehaviour
     {
         coinCountRectTransform = coinCounterTaxt.gameObject.GetComponent<RectTransform>();
     }
+    private void OnDestroy()
+    {
+        coinCounterTaxt?.DOKill();
+        coinCountRectTransform?.DOKill();
+    }
 
     public void SetCoinCounterText(int counter)
     {
         coinCounterTaxt.text = counter.ToString();
     }
+    public int GetFinalCoinCount()
+    {
+        return int.Parse(coinCounterTaxt.text);
+    }
 
     public void SetCoinCompleted()
     {
+        coinCounterTaxt.DOKill();
+        coinCountRectTransform.DOKill();
         coinCounterTaxt.DOColor(coinCounterColor, colorDuration);
         coinCountRectTransform.DOScale(1.2f, scaleDuration).SetEase(Ease.OutBack);
     }

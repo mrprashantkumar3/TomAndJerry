@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
      [SerializeField] private float airMultiplier;
      [SerializeField] private float airDrag;
      [SerializeField] private bool canJump;
+     
 
      [Header("Slidingt")]
      [SerializeField] private KeyCode slideKey;
@@ -42,6 +43,13 @@ public class PlayerController : MonoBehaviour
     private bool isRunning;
     private bool wasFalling;
     private bool isLanding;
+
+    private bool isJumping;
+    private float jumpStartY;
+    private float jumpPeakY;        // Highest point track karega
+    private bool peakReached;
+    [SerializeField] private float fallThresholdOffset = 0.5f;
+    
 
     private void Awake()
     {
@@ -88,9 +96,13 @@ public class PlayerController : MonoBehaviour
             isRunning = false;
            // Debug.Log("Player is Moving");
         }
-         else if(Input.GetKey(jumpKey) && canJump && IsGrounded())
+         else if(Input.GetKeyDown(jumpKey) && canJump && IsGrounded())
         {
             canJump = false;
+            isJumping = true;
+            jumpStartY = transform.position.y; 
+            jumpPeakY = jumpStartY;    
+            peakReached = false;
             SetPlayerJumpming();
             Invoke(nameof(ResetJumping), jumpCoolDown);
         }
@@ -101,9 +113,41 @@ public class PlayerController : MonoBehaviour
         var movementDirection = GetMovementDirection();
         var isGrounded = IsGrounded();
         var isRunning = IsRunning();
-        var wasFalling = IsFalling();
-        var isLanding = IsLanding();
+        var currentY = transform.position.y;
+        var isFalling = IsFalling();
+        //var isLanding = IsLanding();
         var currentState = stateController.GetCurrentState();
+
+        wasFalling = playerRigidbody.linearVelocity.y < -0.1f;
+
+        if (isJumping && currentY > jumpPeakY)
+        {
+            jumpPeakY = currentY; 
+        }
+
+        
+        if (isJumping && wasFalling && !peakReached)
+        {
+            peakReached = true;
+        }
+
+        var isBelowThreshold = currentY <= jumpStartY + fallThresholdOffset;
+
+        if (isGrounded && isJumping && playerRigidbody.linearVelocity.y <= 0)
+        {
+            isJumping = false;
+            peakReached = false;
+            canJump = true;
+        }
+
+       
+        if (isGrounded && currentState == PlayerState.Falling)
+        {
+            isJumping = false;
+            peakReached = false;
+            canJump = true;
+        }
+        
         var newState = currentState switch
         {
             _ when movementDirection == Vector3.zero && isGrounded && !isRunning => PlayerState.Idle,
@@ -111,9 +155,9 @@ public class PlayerController : MonoBehaviour
             _ when movementDirection != Vector3.zero && isGrounded &&  isRunning => PlayerState.Running,
             _ when movementDirection == Vector3.zero && isGrounded &&  isRunning => PlayerState.Idle,
             
-            _ when !canJump && wasFalling && !isGrounded => PlayerState.Jump, 
+            _ when isJumping && !isGrounded && !peakReached => PlayerState.Jump, 
             //_ when movementDirection != Vector3.zero && !yVel && isGrounded && !isRunning => PlayerState.Move,
-            _ when !wasFalling && !isGrounded => PlayerState.Falling,
+            _ when  !isGrounded && isFalling && isBelowThreshold => PlayerState.Falling,
             _ when !isLanding && !wasFalling && isGrounded => PlayerState.Landing,
             _ when movementDirection == Vector3.zero && !wasFalling && isGrounded && !isRunning => PlayerState.Idle,
             
@@ -149,10 +193,11 @@ public class PlayerController : MonoBehaviour
         }
          else 
         {
-             forceMultiplier = airMultiplier;
-             forceMultiplier = stateController.GetCurrentState() switch
+            forceMultiplier = airMultiplier * 5f;
+            forceMultiplier = stateController.GetCurrentState() switch
              {
-                 PlayerState.Falling => airMultiplier,
+                PlayerState.Jump => forceMultiplier,
+                PlayerState.Falling => 0.25f,
                  _ => 0f
              };
             
@@ -161,7 +206,7 @@ public class PlayerController : MonoBehaviour
 
     playerRigidbody.AddForce(
         movementDirection.normalized * movementSpeed * forceMultiplier,
-        ForceMode.Force
+        ForceMode.Acceleration
     );
         // if (!IsGrounded())
        
@@ -188,7 +233,7 @@ public class PlayerController : MonoBehaviour
           PlayerState.Move => groundDrag,
           PlayerState.Running => slideDrag,
           PlayerState.Jump => airDrag,
-          //PlayerState.Falling => airMultiplier,
+          //PlayerState.Falling => airDrag,
           //PlayerState.Landing => groundDrag,
           _ => playerRigidbody.linearDamping
         };
@@ -196,6 +241,7 @@ public class PlayerController : MonoBehaviour
     }
      private void LimitPlayerSpeed()
     {
+        if (!IsGrounded()) return;
         Vector3 flatVelocity = new Vector3(playerRigidbody.linearVelocity.x, 0f , playerRigidbody.linearVelocity.z);
         if (flatVelocity.magnitude > movementSpeed)
         {
@@ -209,8 +255,8 @@ public class PlayerController : MonoBehaviour
        
         OnPlayerJump?.Invoke();
         playerRigidbody.linearVelocity = new Vector3(playerRigidbody.linearVelocity.x, 0f, playerRigidbody.linearVelocity.z);
-
-        playerRigidbody.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        Vector3 forwardBoost = movementDirection.normalized * movementSpeed * 1f;
+        playerRigidbody.AddForce(transform.up * jumpForce + forwardBoost, ForceMode.Impulse);
     }
     private void ResetJumping()
     {

@@ -26,6 +26,7 @@ public class PlayerIntarectionController : MonoBehaviour
         if(other.gameObject.TryGetComponent<IDamageable>(out var damageable))
         {
             damageable.GiveDamage(playerRigidbody, playerVisualTransform);
+            CameraShake.Instance.ShakeCamera(0.5f, 0.5f);
         }
         if(other.gameObject.TryGetComponent<IHealthable>(out var healthable))
         {
@@ -56,6 +57,7 @@ public class PlayerIntarectionController : MonoBehaviour
         if(other.TryGetComponent<IDamageable>(out var damageable))
         {
             damageable.GiveDamage(playerRigidbody, playerVisualTransform);
+            CameraShake.Instance.ShakeCamera(0.5f, 0.5f);
         }
     }
     

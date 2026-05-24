@@ -20,7 +20,9 @@ public class CatController : MonoBehaviour
     [SerializeField] private float chaseDistance = 2f;
     private bool isWaiting;
     private bool isChasing;
+    private bool isCatCatched = false;
     private float timer;
+    
     
     private Vector3 initialPostion;
     private void Awake()
@@ -33,8 +35,10 @@ public class CatController : MonoBehaviour
         initialPostion = transform.position;
         SetRandomDestination();
     }
+    
     private void Update()
     {
+        if (isCatCatched) return;
         if (playerController.CanCatChase())
         {
             SetChaseMovement();
@@ -54,12 +58,30 @@ public class CatController : MonoBehaviour
         catAgent.SetDestination(offSetPosition);
         catAgent.speed = chaseSpeed;
         catStateController.ChangeState(CatState.Running);
-        if (Vector3.Distance(transform.position, playerTransform.position) <= chaseDistance && isChasing)
+
+        if (Vector3.Distance(transform.position, playerTransform.position) <= chaseDistance 
+        && isChasing 
+        && !isCatCatched) // ✅ sirf ek baar fire hoga
         {
-            OnCatCatched?.Invoke();
-            catStateController.ChangeState(CatState.Attacking);
+            isCatCatched = true; // ✅ dobara fire nahi hoga
             isChasing = false;
+            catAgent.SetDestination(transform.position); // ✅ cat ruk jaayegi
+            catAgent.speed = 0f;
+            catStateController.ChangeState(CatState.Attacking);
+            OnCatCatched?.Invoke(); // ✅ sirf ek baar
         }
+        // if (Vector3.Distance(transform.position, playerTransform.position) <= chaseDistance && isChasing)
+        // {
+        //     OnCatCatched?.Invoke();
+        //     catStateController.ChangeState(CatState.Attacking);
+        //     isChasing = false;
+        // }
+    }
+    public void ResetCatCatched()
+    {
+    isCatCatched = false;
+    isChasing = false;
+    catAgent.speed = defaultSpeed;
     }
     private void SetPatrolMovement()
     {
@@ -135,4 +157,5 @@ public class CatController : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(pos, patrolRedus);
     }
+   
 }

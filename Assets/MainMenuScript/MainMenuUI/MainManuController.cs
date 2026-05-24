@@ -13,8 +13,9 @@ public class MainManuController : MonoBehaviour
     {
         playButton.onClick.AddListener(() =>
         {
-            TransitionManager.Instance.LoadLevel(Consts.SceneNames.Game_Scene);
+           // TransitionManager.Instance.LoadLevel(Consts.SceneNames.Game_Scene);
             //SceneManager.LoadScene(Consts.SceneNames.Game_Scene);
+            LoadingMenuManager.Instance.SwitchToScene(Consts.SceneNames.Game_Scene);
         });
     }
 

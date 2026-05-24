@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.UI;
 
 
@@ -17,6 +18,7 @@ public class PlayerStateUI : MonoBehaviour
     [SerializeField] private RectTransform boosterSpeedTransform;
     [SerializeField] private RectTransform boosterJumpTransform;
     [SerializeField] private RectTransform boosterSlowTransform;
+    [SerializeField] private PlayableDirector playableDirector;
 
     [Header("Image")]
     [SerializeField] private Image goldBoosterWheatTmage;
@@ -51,8 +53,32 @@ public class PlayerStateUI : MonoBehaviour
     private void Start()
     {
         playerController.OnPlayerStateChange += PlayerController_OnPlayerStateChange;
-        SetStateUserInterfaces(playerWalkingActiveSprite, playerSlidingPassiveSprite, playerWalkingTransform, playerSlidingTransform);
+        playableDirector.stopped += OnTimelineFinished;
+        //SetStateUserInterfaces(playerWalkingActiveSprite, playerSlidingPassiveSprite, playerWalkingTransform, playerSlidingTransform);
        
+    }
+    private void OnDestroy()
+    {
+        if (playerController != null)
+            playerController.OnPlayerStateChange -= PlayerController_OnPlayerStateChange;
+
+        if (playableDirector != null)
+            playableDirector.stopped -= OnTimelineFinished;
+
+        // ✅ FIX 2: Scene change pe DOTween animations kill karo (memory leak bhi bacha)
+        // playerWalkingTransform?.DOKill();
+        // playerSlidingTransform?.DOKill();
+
+        DOTween.Kill(playerWalkingTransform);
+        DOTween.Kill(playerSlidingTransform);
+        DOTween.Kill(boosterSpeedTransform);
+        DOTween.Kill(boosterJumpTransform);
+        DOTween.Kill(boosterSlowTransform);
+    }
+
+    private void OnTimelineFinished(PlayableDirector director)
+    {
+        SetStateUserInterfaces(playerWalkingActiveSprite, playerSlidingPassiveSprite, playerWalkingTransform, playerSlidingTransform);
     }
 
     private void PlayerController_OnPlayerStateChange(PlayerState playerState)
@@ -74,8 +100,16 @@ public class PlayerStateUI : MonoBehaviour
     private void SetStateUserInterfaces(Sprite playerWalkingSprite, Sprite playerSlidingSprite,
     RectTransform activeTransform, RectTransform passiveTransform)
     {
+        if (playerWalkingImage == null || playerSlidingImage == null)
+        {
+            Debug.LogWarning("PlayerStateUI: Image components destroy ho chuke hain, UI update skip kar raha hai.");
+            return;
+        }
         playerWalkingImage.sprite = playerWalkingSprite;
         playerSlidingImage.sprite = playerSlidingSprite;
+
+        activeTransform.DOKill();
+        passiveTransform.DOKill();
 
         activeTransform.DOAnchorPosX(50f, moveDuration).SetEase(moveEase);
         passiveTransform.DOAnchorPosX(-50f, moveDuration).SetEase(moveEase);
@@ -90,6 +124,7 @@ public class PlayerStateUI : MonoBehaviour
         activeTransform.DOAnchorPosX(-75f, moveDuration).SetEase(moveEase);
 
         yield return new WaitForSeconds(duration);
+        if (boosterImage == null || wheatImage == null) yield break;
 
         boosterImage.sprite = passiveSprite;
         wheatImage.sprite = passiveWheatSprite;

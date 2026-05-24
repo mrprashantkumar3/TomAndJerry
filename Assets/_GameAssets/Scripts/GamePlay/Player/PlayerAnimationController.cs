@@ -32,7 +32,7 @@ public class PlayerAnimationController : MonoBehaviour
     private void PlayerController_OnPlayerJump()
     {
        playerAnimator.SetBool(Consts.PlayerAnimations.IS_JUMPING, true);
-       Invoke(nameof(ResetJumping), 0.5f);
+       Invoke(nameof(ResetJumping), 1f);
     }
     private void ResetJumping()
     {
@@ -48,6 +48,7 @@ public class PlayerAnimationController : MonoBehaviour
               playerAnimator.SetBool(Consts.PlayerAnimations.IS_MOVING, false);
               playerAnimator.SetBool(Consts.PlayerAnimations.IS_FALLING, false);
               playerAnimator.SetBool(Consts.PlayerAnimations.IS_LANDING, false);
+              playerAnimator.SetBool(Consts.PlayerAnimations.IS_LANDING, false);
               break;
             case PlayerState.Move:
               playerAnimator.SetBool(Consts.PlayerAnimations.IS_RUNNING, false);
@@ -61,6 +62,8 @@ public class PlayerAnimationController : MonoBehaviour
               playerAnimator.SetBool(Consts.PlayerAnimations.IS_FALLING, false);
               playerAnimator.SetBool(Consts.PlayerAnimations.IS_LANDING, false);
               break;
+            
+            
             case PlayerState.Falling:
               playerAnimator.SetBool(Consts.PlayerAnimations.IS_FALLING, true);
               playerAnimator.SetBool(Consts.PlayerAnimations.IS_MOVING, false);

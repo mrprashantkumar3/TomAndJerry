@@ -24,6 +24,15 @@ public class PlayerHealthUI : MonoBehaviour
             playerHealthTransform[i] = playerHealthImage[i].gameObject.GetComponent<RectTransform>();
         }
     }
+    private void OnDestroy()
+    {
+        if (playerHealthTransform == null) return;
+
+        for (int i = 0; i < playerHealthTransform.Length; i++)
+        {
+            playerHealthTransform[i]?.DOKill();
+        }
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.O))
@@ -81,17 +90,24 @@ public class PlayerHealthUI : MonoBehaviour
 
     private void AnimateDamageSprite(Image activeImage, RectTransform activeImageTransform)
     {
+        
+        //activeImageTransform.DOKill();
+        //activeImageTransform.localScale = Vector3.one;
         activeImageTransform.DOScale(0f, scaleDuration).SetEase(Ease.InBack).OnComplete(() =>
         {
+            Debug.Log("OnComplete REACHED!");
+
             activeImage.sprite  = playerUnHealthSprite;
             activeImageTransform.DOScale(1f, scaleDuration).SetEase(Ease.OutBack);
         });
     }
      private void AnimateHealthSprite(Image passiveImage, RectTransform activeImageTransform)
     {
+        
         activeImageTransform.DOScale(0f, scaleDuration).SetEase(Ease.InBack).OnComplete(() =>
         {
             passiveImage.sprite  = playerHealthSprite;
+           
             activeImageTransform.DOScale(1f, scaleDuration).SetEase(Ease.OutBack);
         });
     }
