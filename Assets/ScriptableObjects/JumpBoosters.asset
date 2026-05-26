@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37cc53c63b2ed54e8ba114539733f71, type: 3}
   m_Name: JumpBoosters
   m_EditorClassIdentifier: Assembly-CSharp::WheatDesingSO
-  increaseDecreaseMultiplier: 20
-  resetBoostDuration: 10000
-  activeSprite: {fileID: 21300000, guid: ee40d72ece864764f9d17d015aedb524, type: 3}
+  increaseDecreaseMultiplier: 10
+  resetBoostDuration: 8
+  activeSprite: {fileID: -1297352819, guid: 7cb69d3500307414bb4278e736a7996b, type: 3}
   passiveSprite: {fileID: 1651779334, guid: 6d1a2570067e3ae4cb5c72a2bca3b8d5, type: 3}
-  activeWheatSprite: {fileID: 21300000, guid: ee40d72ece864764f9d17d015aedb524, type: 3}
-  passiveWheatSprite: {fileID: 21300000, guid: ee40d72ece864764f9d17d015aedb524, type: 3}
+  activeWheatSprite: {fileID: -1297352819, guid: 7cb69d3500307414bb4278e736a7996b, type: 3}
+  passiveWheatSprite: {fileID: -1297352819, guid: 7cb69d3500307414bb4278e736a7996b, type: 3}

@@ -8,7 +8,6 @@ public static class  GameSessionData
     private const string KEY_TOTAL_KEYS = "TotalKeys";
     private const string KEY_TOTAL_EXP = "TotalExperience";
 
-    // Collected keys — jo player collect kar chuka hai
     private const string KEY_COLLECTED_COINS = "CollectedCoins";
     private const string KEY_COLLECTED_DIAMONDS = "CollectedDiamonds";
     private const string KEY_COLLECTED_KEYS = "CollectedKeys";

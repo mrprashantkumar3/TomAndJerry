@@ -64,14 +64,14 @@ public class GameManeger : MonoBehaviour
       switch (gameState)
         {
             case GameState.Pause:
-                // SAB kuch pause — player, cat, cutscene, physics sab
+                
                 Time.timeScale = 0f;
                 break;
 
             case GameState.Resume:
             case GameState.Play:
             case GameState.CutScene:
-                // Normal speed resume
+                //resume
                 Time.timeScale = 1f;
                 break;
 
@@ -110,7 +110,7 @@ public class GameManeger : MonoBehaviour
             return;
         }
 
-        Debug.Log("Timer khatam, ingredients complete nahi — Game Lose!");
+        Debug.Log("Timer khatam ho gya, ingredients complete nahi — Game Lose!");
         ChangeGameState(GameState.GameOver);
         winLoseUI.gameObject.SetActive(true);
         winLoseUI.OnGameLose();

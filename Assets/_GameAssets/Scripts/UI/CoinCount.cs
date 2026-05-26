@@ -9,7 +9,7 @@ public class CoinCount : MonoBehaviour
    [SerializeField] private float colorDuration;
    [SerializeField] private float scaleDuration;
    private RectTransform coinCountRectTransform;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
    private void Awake()
     {
         coinCountRectTransform = coinCounterTaxt.gameObject.GetComponent<RectTransform>();

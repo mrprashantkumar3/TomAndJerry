@@ -25,10 +25,10 @@ public class PlayerController : MonoBehaviour
      [SerializeField] private bool canJump;
      
 
-     [Header("Slidingt")]
-     [SerializeField] private KeyCode slideKey;
-    [SerializeField] private float slideMultiple;
-    [SerializeField] private float slideDrag;
+     [Header("Running")]
+     [SerializeField] private KeyCode runKey;
+    [SerializeField] private float runMultiple;
+    [SerializeField] private float runDrag;
 
      [Header("Gound Check")]
      [SerializeField] private float playerHeight;
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isJumping;
     private float jumpStartY;
-    private float jumpPeakY;        // Highest point track karega
+    private float jumpPeakY;
     private bool peakReached;
     [SerializeField] private float fallThresholdOffset = 0.5f;
     
@@ -87,14 +87,14 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        if(Input.GetKeyDown(slideKey))
+        if(Input.GetKeyDown(runKey))
         {
             isRunning = true;
-          //  Debug.Log("Player Sliding");
+            Debug.Log("Player Running");
         }else if(Input.GetKeyDown(movementKey))
         {
             isRunning = false;
-           // Debug.Log("Player is Moving");
+           Debug.Log("Player is Moving");
         }
          else if(Input.GetKeyDown(jumpKey) && canJump && IsGrounded())
         {
@@ -184,7 +184,7 @@ public class PlayerController : MonoBehaviour
              forceMultiplier = stateController.GetCurrentState() switch
         {
              PlayerState.Move => 1f,
-             PlayerState.Running => slideMultiple,
+             PlayerState.Running => runMultiple,
              PlayerState.Jump => airMultiplier,
              PlayerState.Landing => 1f,
              _ => 1f
@@ -231,7 +231,7 @@ public class PlayerController : MonoBehaviour
         playerRigidbody.linearDamping = stateController.GetCurrentState() switch
         {
           PlayerState.Move => groundDrag,
-          PlayerState.Running => slideDrag,
+          PlayerState.Running => runDrag,
           PlayerState.Jump => airDrag,
           //PlayerState.Falling => airDrag,
           //PlayerState.Landing => groundDrag,

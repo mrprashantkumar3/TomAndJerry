@@ -335,8 +335,8 @@ MonoBehaviour:
   airDrag: 0.75
   canJump: 1
   runKey: 113
-  runMultiple: 0.75
-  runDrag: 5
+  runMultiple: 0.5
+  runDrag: 1
   playerHeight: 1
   groundLayer:
     serializedVersion: 2
@@ -3855,7 +3855,7 @@ MonoBehaviour:
   goldBoosterWheatTmage: {fileID: 29845003}
   holyBoosterWheatTmage: {fileID: 1037096370}
   rottenBoosterWheatTmage: {fileID: 1272440881}
-  playerWalkingActiveSprite: {fileID: 956171080, guid: 7cb69d3500307414bb4278e736a7996b, type: 3}
+  playerWalkingActiveSprite: {fileID: 21300000, guid: c67fbf9375ad5c34399c2849430ca7f7, type: 3}
   playerWalkingPassiveSprite: {fileID: 1651779334, guid: 6d1a2570067e3ae4cb5c72a2bca3b8d5, type: 3}
   playerSlidingActiveSprite: {fileID: 1916390186, guid: 7cb69d3500307414bb4278e736a7996b, type: 3}
   playerSlidingPassiveSprite: {fileID: 1651779334, guid: 6d1a2570067e3ae4cb5c72a2bca3b8d5, type: 3}
@@ -12028,7 +12028,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 956171080, guid: 7cb69d3500307414bb4278e736a7996b, type: 3}
+  m_Sprite: {fileID: 1916390186, guid: 7cb69d3500307414bb4278e736a7996b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

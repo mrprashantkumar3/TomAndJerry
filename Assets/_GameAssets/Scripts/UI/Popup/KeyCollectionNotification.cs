@@ -26,7 +26,6 @@ public class KeyCollectionNotification : MonoBehaviour
 
     private void Awake()
     {
-        // Panel ko upar chhupa do
         hiddenY = notificationPanel.rect.height + 50f;
         shownY = -notificationPanel.rect.height * 0.0f; 
 

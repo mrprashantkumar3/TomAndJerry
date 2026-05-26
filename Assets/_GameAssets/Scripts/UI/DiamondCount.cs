@@ -9,7 +9,7 @@ public class DiamondCount : MonoBehaviour
    [SerializeField] private float colorDuration;
    [SerializeField] private float scaleDuration;
    private RectTransform diamondCountRectTransform;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
    private void Awake()
     {
         diamondCountRectTransform = diamondCounterTaxt.gameObject.GetComponent<RectTransform>();

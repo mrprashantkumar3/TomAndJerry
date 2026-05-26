@@ -65,7 +65,7 @@ public class PlayerStateUI : MonoBehaviour
         if (playableDirector != null)
             playableDirector.stopped -= OnTimelineFinished;
 
-        // ✅ FIX 2: Scene change pe DOTween animations kill karo (memory leak bhi bacha)
+        
         // playerWalkingTransform?.DOKill();
         // playerSlidingTransform?.DOKill();
 

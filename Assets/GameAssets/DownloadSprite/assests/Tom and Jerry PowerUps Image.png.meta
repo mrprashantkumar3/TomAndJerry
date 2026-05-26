@@ -1,0 +1,591 @@
+fileFormatVersion: 2
+guid: 7cb69d3500307414bb4278e736a7996b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 727
+        width: 170
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a1f7d3536a8cc4ebdfb835e15a3159
+      internalID: 1024115334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_21
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 742
+        width: 190
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07644c85d4f4274a935bb993426500f
+      internalID: 641544378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 725
+        width: 165
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c411f5bbbfcd6a42b284435e09ec85e
+      internalID: -180616739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_23
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 729
+        width: 145
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c208409a5518a46b048a7ef781b2d2
+      internalID: -1160981790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_24
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 525
+        width: 220
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b89b32adcf3754c82e7fb43254632b
+      internalID: -1275928959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_25
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 526
+        width: 179
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f63d6388ce57f47aaf6a7c0d060abc
+      internalID: 244958460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_75
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 78
+        width: 259
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00288759a7ccdd64ba29bc1a68a7985a
+      internalID: 542316739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_100
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 78
+        width: 263
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe03092123770b4ba00a4a9f26c0f07
+      internalID: -1297352819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_101
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 82
+        width: 266
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050f66a67e262f640b74a4348cee48ef
+      internalID: 920896823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_102
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 78
+        width: 258
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442fa3bd0c4e84643b8d8fb5107328e7
+      internalID: 1916390186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_1
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 740
+        width: 186
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fe527df00ba184fbc343fcd73ad14e
+      internalID: 1764691895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_2
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 728
+        width: 149
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5215eeaa2218f54fad981419b87c554
+      internalID: -7472974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_3
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 725
+        width: 147
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c20095090370ad4584d647e8a80b8ff
+      internalID: 25995736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_4
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 739
+        width: 211
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacc472cf9c830b4591f3ace9e32fb8d
+      internalID: 956171080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tom and Jerry PowerUps Image_5
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 525
+        width: 179
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2647af414fbd94b9f68271082c4b64
+      internalID: -92485638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ea0c7a1b61e95ce43bf8e8537fb8db93
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":2.0},"gridSpriteSize":{"x":384.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Tom and Jerry PowerUps Image_0: 1024115334
+      Tom and Jerry PowerUps Image_1: 1764691895
+      Tom and Jerry PowerUps Image_10: -806916746
+      Tom and Jerry PowerUps Image_100: -1297352819
+      Tom and Jerry PowerUps Image_101: 920896823
+      Tom and Jerry PowerUps Image_102: 1916390186
+      Tom and Jerry PowerUps Image_11: 188436225
+      Tom and Jerry PowerUps Image_12: 898220442
+      Tom and Jerry PowerUps Image_13: 1976336394
+      Tom and Jerry PowerUps Image_14: 1456463622
+      Tom and Jerry PowerUps Image_15: 844310497
+      Tom and Jerry PowerUps Image_16: -615845434
+      Tom and Jerry PowerUps Image_17: 2046112882
+      Tom and Jerry PowerUps Image_18: -1336975605
+      Tom and Jerry PowerUps Image_19: -843020413
+      Tom and Jerry PowerUps Image_2: -7472974
+      Tom and Jerry PowerUps Image_20: 263836888
+      Tom and Jerry PowerUps Image_21: 641544378
+      Tom and Jerry PowerUps Image_22: -180616739
+      Tom and Jerry PowerUps Image_23: -1160981790
+      Tom and Jerry PowerUps Image_24: -1275928959
+      Tom and Jerry PowerUps Image_25: 244958460
+      Tom and Jerry PowerUps Image_26: 13408336
+      Tom and Jerry PowerUps Image_27: -133218126
+      Tom and Jerry PowerUps Image_28: -1720165964
+      Tom and Jerry PowerUps Image_29: 1694566679
+      Tom and Jerry PowerUps Image_3: 25995736
+      Tom and Jerry PowerUps Image_30: -975034061
+      Tom and Jerry PowerUps Image_31: 2130487207
+      Tom and Jerry PowerUps Image_32: -1188151990
+      Tom and Jerry PowerUps Image_33: -1140949038
+      Tom and Jerry PowerUps Image_34: -748897218
+      Tom and Jerry PowerUps Image_35: -1016102110
+      Tom and Jerry PowerUps Image_36: 1842941800
+      Tom and Jerry PowerUps Image_37: 1562953692
+      Tom and Jerry PowerUps Image_38: 242357030
+      Tom and Jerry PowerUps Image_39: -2101175303
+      Tom and Jerry PowerUps Image_4: 956171080
+      Tom and Jerry PowerUps Image_40: 877406570
+      Tom and Jerry PowerUps Image_41: 1371998638
+      Tom and Jerry PowerUps Image_42: -1306738969
+      Tom and Jerry PowerUps Image_43: 2126831355
+      Tom and Jerry PowerUps Image_44: -1984484966
+      Tom and Jerry PowerUps Image_45: -1860756879
+      Tom and Jerry PowerUps Image_46: 957607117
+      Tom and Jerry PowerUps Image_47: -248895083
+      Tom and Jerry PowerUps Image_48: -981036479
+      Tom and Jerry PowerUps Image_49: 163394476
+      Tom and Jerry PowerUps Image_5: -92485638
+      Tom and Jerry PowerUps Image_50: 296241528
+      Tom and Jerry PowerUps Image_51: 1611221757
+      Tom and Jerry PowerUps Image_52: 570518723
+      Tom and Jerry PowerUps Image_53: -1789191902
+      Tom and Jerry PowerUps Image_54: -1950946035
+      Tom and Jerry PowerUps Image_55: 602748920
+      Tom and Jerry PowerUps Image_56: 400462999
+      Tom and Jerry PowerUps Image_57: 1309663444
+      Tom and Jerry PowerUps Image_58: 1997965218
+      Tom and Jerry PowerUps Image_59: -295881152
+      Tom and Jerry PowerUps Image_6: 1862967772
+      Tom and Jerry PowerUps Image_60: 2080185256
+      Tom and Jerry PowerUps Image_61: -862066868
+      Tom and Jerry PowerUps Image_62: 881190531
+      Tom and Jerry PowerUps Image_63: -617147313
+      Tom and Jerry PowerUps Image_64: -70492519
+      Tom and Jerry PowerUps Image_65: -581233785
+      Tom and Jerry PowerUps Image_66: 1594983339
+      Tom and Jerry PowerUps Image_67: 1506859974
+      Tom and Jerry PowerUps Image_68: -960671671
+      Tom and Jerry PowerUps Image_69: -366259868
+      Tom and Jerry PowerUps Image_7: 603146276
+      Tom and Jerry PowerUps Image_70: 2095515912
+      Tom and Jerry PowerUps Image_71: -292136621
+      Tom and Jerry PowerUps Image_72: 2003135146
+      Tom and Jerry PowerUps Image_73: -1990486927
+      Tom and Jerry PowerUps Image_74: 641254452
+      Tom and Jerry PowerUps Image_75: 542316739
+      Tom and Jerry PowerUps Image_76: -1452312715
+      Tom and Jerry PowerUps Image_77: 1282748322
+      Tom and Jerry PowerUps Image_78: -1403956569
+      Tom and Jerry PowerUps Image_79: 245356330
+      Tom and Jerry PowerUps Image_8: -478248314
+      Tom and Jerry PowerUps Image_80: 1868062525
+      Tom and Jerry PowerUps Image_81: 1748385059
+      Tom and Jerry PowerUps Image_82: 829921970
+      Tom and Jerry PowerUps Image_83: -56503960
+      Tom and Jerry PowerUps Image_84: -530603370
+      Tom and Jerry PowerUps Image_85: -876650809
+      Tom and Jerry PowerUps Image_86: -1492476035
+      Tom and Jerry PowerUps Image_87: -1549208791
+      Tom and Jerry PowerUps Image_88: 546533335
+      Tom and Jerry PowerUps Image_89: -208091830
+      Tom and Jerry PowerUps Image_9: 131745781
+      Tom and Jerry PowerUps Image_90: -1750301020
+      Tom and Jerry PowerUps Image_91: -2129453636
+      Tom and Jerry PowerUps Image_92: 231467677
+      Tom and Jerry PowerUps Image_93: 851730266
+      Tom and Jerry PowerUps Image_94: 596175205
+      Tom and Jerry PowerUps Image_95: 307283727
+      Tom and Jerry PowerUps Image_96: 1859303002
+      Tom and Jerry PowerUps Image_97: -740554580
+      Tom and Jerry PowerUps Image_98: -598086658
+      Tom and Jerry PowerUps Image_99: 1637611698
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
