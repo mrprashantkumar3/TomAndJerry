@@ -20,7 +20,7 @@ public class GreenPotion : MonoBehaviour, ICollectibles
     {
         playerController.SetMovementSpeed(wheatDesingSO.IncreaseDecreaseMultiplier, wheatDesingSO.ResetBoostDuration);
 
-        playerStateUI.PlayBoosterUIAnimation(playerBoosterTransform, playerBoosterImage, playerStateUI.GetGoldBoosterWheatImage, wheatDesingSO.ActiveSprite, wheatDesingSO.PassiveSprite,
+        playerStateUI.PlayBoosterUIAnimation(playerBoosterTransform, playerBoosterImage, playerStateUI.GetSpeedBoosterImage, wheatDesingSO.ActiveSprite, wheatDesingSO.PassiveSprite,
         wheatDesingSO.ActiveWheatSprite, wheatDesingSO.PassiveWheatSprite, wheatDesingSO.ResetBoostDuration);
         CameraShake.Instance.ShakeCamera(0.15f, 0.15f);
         Destroy(gameObject);

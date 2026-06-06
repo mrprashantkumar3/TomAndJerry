@@ -19,7 +19,7 @@ public class RedPotion : MonoBehaviour, ICollectibles
     {
         playerController.SetMovementSpeed(wheatDesingSO.IncreaseDecreaseMultiplier, wheatDesingSO.ResetBoostDuration);
 
-         playerStateUI.PlayBoosterUIAnimation(playerBoosterTransform, playerBoosterImage, playerStateUI.GetRottenBoosterWheatImage, wheatDesingSO.ActiveSprite, wheatDesingSO.PassiveSprite,
+         playerStateUI.PlayBoosterUIAnimation(playerBoosterTransform, playerBoosterImage, playerStateUI.GetSlowBoosterImage, wheatDesingSO.ActiveSprite, wheatDesingSO.PassiveSprite,
         wheatDesingSO.ActiveWheatSprite, wheatDesingSO.PassiveWheatSprite, wheatDesingSO.ResetBoostDuration);
         CameraShake.Instance.ShakeCamera(0.5f, 0.5f);
         Destroy(gameObject);

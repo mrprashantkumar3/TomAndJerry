@@ -21,9 +21,9 @@ public class PlayerStateUI : MonoBehaviour
     [SerializeField] private PlayableDirector playableDirector;
 
     [Header("Image")]
-    [SerializeField] private Image goldBoosterWheatTmage;
-    [SerializeField] private Image holyBoosterWheatTmage;
-    [SerializeField] private Image rottenBoosterWheatTmage;
+    [SerializeField] private Image speedBoosterImage;
+    [SerializeField] private Image jumpBoosterImage;
+    [SerializeField] private Image slowBoosterImage;
 
     [Header("Sprite")]
     [SerializeField] private Sprite playerWalkingActiveSprite;
@@ -38,9 +38,9 @@ public class PlayerStateUI : MonoBehaviour
     public RectTransform GetBoosterSpeedTransform => boosterSpeedTransform;
     public RectTransform GetBoosterJumpTransform => boosterJumpTransform;
     public RectTransform GetBoosterSlowTransform => boosterSlowTransform;
-    public Image GetGoldBoosterWheatImage => goldBoosterWheatTmage;
-    public Image GetHolyBoosterWheatImage => holyBoosterWheatTmage;
-    public Image GetRottenBoosterWheatImage => rottenBoosterWheatTmage;
+    public Image GetSpeedBoosterImage => speedBoosterImage;
+    public Image GetJumpBoosterImage => jumpBoosterImage;
+    public Image GetSlowBoosterImage => slowBoosterImage;
     private Image playerWalkingImage;
     private Image playerSlidingImage;
 
@@ -121,14 +121,14 @@ public class PlayerStateUI : MonoBehaviour
     {
         boosterImage.sprite = activeSprite;
         wheatImage.sprite = activeWheatSprite;
-        activeTransform.DOAnchorPosX(-75f, moveDuration).SetEase(moveEase);
+        activeTransform.DOAnchorPosX(-55f, moveDuration).SetEase(moveEase);
 
         yield return new WaitForSeconds(duration);
         if (boosterImage == null || wheatImage == null) yield break;
 
         boosterImage.sprite = passiveSprite;
         wheatImage.sprite = passiveWheatSprite;
-        activeTransform.DOAnchorPosX(-50f, moveDuration).SetEase(moveEase);
+        activeTransform.DOAnchorPosX(50f, moveDuration).SetEase(moveEase);
     }
 
     public void PlayBoosterUIAnimation(RectTransform activeTransform, Image boosterImage,
