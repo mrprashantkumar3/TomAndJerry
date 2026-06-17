@@ -26177,7 +26177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2792403414121380551, guid: 7746893b9c776b748a1b3a1cea0fa2bf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 50
+      value: 74.06
       objectReference: {fileID: 0}
     - target: {fileID: 2792403414121380551, guid: 7746893b9c776b748a1b3a1cea0fa2bf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26213,7 +26213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3112607134160607978, guid: 7746893b9c776b748a1b3a1cea0fa2bf, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8818046830972748148, guid: 7746893b9c776b748a1b3a1cea0fa2bf, type: 3}
       propertyPath: playerTransform
@@ -26624,6 +26624,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7713455062588614244, guid: f1b5ef1f525125846bc0f1ccb7735576, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 93b590f69f1d38e4cb1c2bd47da773bb, type: 2}
     - target: {fileID: 8009127919775127389, guid: f1b5ef1f525125846bc0f1ccb7735576, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.25
