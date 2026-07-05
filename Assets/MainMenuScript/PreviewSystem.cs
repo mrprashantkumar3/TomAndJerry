@@ -101,7 +101,7 @@ public class PreviewSystem : MonoBehaviour
         currentRotation = (currentRotation + 90) % 360;
         previewObject.transform.rotation = Quaternion.Euler(0, currentRotation, 0);
         
-        // Cursor ko bhi rotate karo agar size different hai
+       
         cellIndicator.transform.rotation = Quaternion.Euler(0, currentRotation, 0);
     }
 

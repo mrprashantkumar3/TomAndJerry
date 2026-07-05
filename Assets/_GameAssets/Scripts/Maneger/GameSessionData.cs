@@ -60,7 +60,7 @@ public static class  GameSessionData
         private set { PlayerPrefs.SetInt(KEY_TOTAL_EXP, value); PlayerPrefs.Save(); }
     }
 
-    // ✅ Collected — jo collect ho chuka hai
+
     private static int CollectedCoins
     {
         get => PlayerPrefs.GetInt(KEY_COLLECTED_COINS, 0);
@@ -88,13 +88,13 @@ public static class  GameSessionData
         private set { PlayerPrefs.SetInt(KEY_HAS_REWARD, value ? 1 : 0); PlayerPrefs.Save(); }
     }
 
-    // ✅ Uncollected = Total - Collected (yahi RewardPanel me dikhao)
+    
     public static int UncollectedCoins => TotalCoins - CollectedCoins;
     public static int UncollectedDiamonds => TotalDiamonds - CollectedDiamonds;
     public static int UncollectedKeys => TotalKeys - CollectedKeys;
     public static int UncollectedExperience => TotalExperience - CollectedExperience;
 
-    // ✅ Session end pe call karo
+    
     public static void SaveSessionData(int coins, int diamonds, int keys, int exp)
     {
         TotalCoins += coins;
@@ -104,10 +104,10 @@ public static class  GameSessionData
         HasPendingReward = true;
     }
 
-    // ✅ Collect button pe — collected update karo
+    
     public static void ClearPendingReward()
     {
-        // Abhi tak jo uncollected tha vo collect ho gaya
+        
         CollectedCoins = TotalCoins;
         CollectedDiamonds = TotalDiamonds;
         CollectedKeys = TotalKeys;
